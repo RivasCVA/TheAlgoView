@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>TheAlgoView - Pathfinding</title>
+        <link href="main.css" rel="stylesheet">
+        <section class="header-section">
+            <nav class="home">
+                <h1 class="head-title"><a href="index.html">TheAlgoView</a></h1>
+                <h2 class="head-title"><a href="index.html">Step by Step Animations</a></h2>
+            </nav>
+            <nav class="pages">
+                <ul class="pages-list">
+                    <li class="page-item"><a href="sorting.html">Sorting</a></li>
+                    <li class="page-item"><a href="pathfinding.html"><strong>Pathfinding</strong></a></li>
+                    <li class="page-item"><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="user-input-section">
+            <div class="dropdown-container">
+              <button onclick="dropdownClick()" class="dropdown-button" id="pathfinding-ddb">Breadth-First Search</button>
+              <div id="pathfinding-dropdown-content" class="dropdown-content">
+                <a onclick="algoSelected(this)">Breadth-First Search</a>
+                <a onclick="algoSelected(this)">Depth-First Search</a>
+                <a onclick="algoSelected(this)">A* Search</a>
+                <a onclick="algoSelected(this)">Greedy Best-First Search</a>
+                <a onclick="algoSelected(this)">Bellman-Ford</a>
+                <a onclick="algoSelected(this)">Dijkstra's</a>
+              </div>
+            </div>
+            <button id="clear" onclick="clearAll()">Clear All</button>
+            <button id="clear" onclick="clearPath()">Clear Path</button>
+            <div class="sort-slider-container">
+                <input type="range" min="1" max="10" value="1" class="sort-slider" id="path-speed-slider">
+                </input>
+                <h3 class="sort-slider-label" id="path-speed-slider-label">6x</h3>
+            </div>
+            <button id="start-pathfind" onclick="startFindingPath()">Find Path</button>
+        </section>
+    </header>
+    <body>
+        <script src="other/datastructures.js"></script>
+        <script src="pathfinding/nodehandler.js" defer></script>
+        <script src="pathfinding/pathfinder.js" defer></script>
+        <script src="pathfinding/animate.js" defer></script>
+        <script src="pathfinding/graph.js" defer></script>
+        <script src="pathfinding/pathfinding.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <div id="pathfinding-container"></div>
+        <div class="algo-details">
+            <div class="detail-container">
+                <h1><u>Details</u></h1>
+                <pre id="details-rundown"></pre>
+                <h1><u>Time Complexity</u></h1>
+                <table class="complexity-table" id="path-tc-table">
+                    <tr>
+                        <th>Worst Case</th>
+                        <td id="tc-worst">O(1)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="detail-container">
+                <h1><u>Example Code</u></h1>
+                <pre class="prettyprint lang-java linenums" class="code" id="example-code"></pre>
+            </div>
+        </div>
+    </body>
+</html>

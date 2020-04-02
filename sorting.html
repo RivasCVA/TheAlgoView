@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>TheAlgoView - Sorting</title>
+        <link href="main.css" rel="stylesheet">
+        <section class="header-section">
+            <nav class="home">
+                <h1 class="head-title"><a href="index.html">TheAlgoView</a></h1>
+                <h2 class="head-title"><a href="index.html">Step by Step Animations</a></h2>
+            </nav>
+            <nav class="pages">
+                <ul class="pages-list">
+                    <li class="page-item"><a href="sorting.html"><strong>Sorting</strong></a></li>
+                    <li class="page-item"><a href="pathfinding.html">Pathfinding</a></li>
+                    <li class="page-item"><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <body>
+        <script src="other/datastructures.js"></script>
+        <script src="sorting/rect.js"></script>
+        <script src="sorting/animator.js"></script>
+        <script src="sorting/sorter.js"></script>
+        <script src="sorting/sorting.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <section class="user-input-section">
+            <div class="dropdown-container">
+              <button onclick="dropdownClick()" class="dropdown-button">Bubble Sort</button>
+              <div id="sort-dropdown-content" class="dropdown-content">
+                <a onclick="sortSelect(this)">Bubble Sort</a>
+                <a onclick="sortSelect(this)">Merge Sort</a>
+                <a onclick="sortSelect(this)">Selection Sort</a>
+                <a onclick="sortSelect(this)">Quick Sort</a>
+                <a onclick="sortSelect(this)">Insertion Sort</a>
+                <a onclick="sortSelect(this)">Heap Sort</a>
+              </div>
+            </div>
+            <div class="sort-slider-container">
+                <input type="range" min="5" max="200" value="100" class="sort-slider" id="sort-size-slider">
+                </input>
+                <h3 class="sort-slider-label" id="sort-size-slider-label">0</h3>
+            </div>
+            <div class="sort-slider-container">
+                <input type="range" min="1" max="10" value="1" class="sort-slider" id="sort-speed-slider">
+                </input>
+                <h3 class="sort-slider-label" id="sort-speed-slider-label">1x</h3>
+            </div>
+            <button id="sort-randomize">Randomize</button>
+            <button id="start-sort" onclick="startSortClicked()">Start Sort</button>
+        </section>
+        <div id="sort-container"></div>
+        <div class="algo-details">
+            <div class="detail-container">
+                <h1><u>Time Complexity</u></h1>
+                <table class="complexity-table">
+                    <tr>
+                        <th>Worst</th>
+                        <td id="tc-worst">O(1)</td>
+                    </tr>
+                    <tr>
+                        <th>Average</th>
+                        <td id="tc-average">O(1)</td>
+                    </tr>
+                    <tr>
+                        <th>Best</th>
+                        <td id="tc-best">O(1)</td>
+                    </tr>
+                </table>
+                <h1><u>Space Complexity</u></h1>
+                <h2 id="space-complexity">O(1)</h2>
+            </div>
+            <div class="detail-container">
+                <h1><u>Example Code</u></h1>
+                <pre class="prettyprint lang-java linenums" id="example-code"></pre>
+            </div>
+        </div>
+    </body>
+</html>
