@@ -2,7 +2,7 @@
 A web application developed to learn about different algorithms visually. An exemplary implementation code and other important details is provided for each algorithm.
 
 # Link to Page
-[TheAlgoView.com](thealgoview.com)
+[TheAlgoView.com](http://thealgoview.com)
 
 # Welcome
 This web application currently has:
