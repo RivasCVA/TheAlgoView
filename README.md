@@ -22,3 +22,7 @@ This web application currently has:
   * Bellman-Ford
   * Dijkstra's
   
+  # Tools Used
+- HTML, CSS, Vanilla Javascript
+- That's it! No other framework or plugin.
+  
