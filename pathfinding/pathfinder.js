@@ -886,7 +886,7 @@ bellmanFord(Vertex source, Vertex destination)
             document.getElementById('tc-worst').innerHTML = TimeComplexity.worst;
         }
 
-        var rundown = "<strong>Dijkstra's</strong> algorithm is useful for finding the shortest path in a weighted graph. The algorithm can only use <u>positive weights</u>. <strong>Dijkstra's</strong> algorithm is greedy, so it does <u>NOT</u> guarantee the shortest path.\n\n<strong>Dijkstra's</strong> algorithm continuously calculates the lowest cost (shortest distance) of all possible nodes in the path, starting from the source node. The algorithm runs faster than the Bellman-Ford algorithm because it excludes nodes that may be of higher cost (longer distances). Such greedy behavior causes the algorithm to produce paths that may not be the shortest solutions.";
+        var rundown = "<strong>Dijkstra's</strong> algorithm is useful for finding the shortest path in a weighted graph. The algorithm can only use <u>positive weights</u> and is a greedy algorithm.\n\n<strong>Dijkstra's</strong> algorithm continuously calculates the lowest cost (shortest distance) of all possible nodes in the path, starting from the source node. The algorithm runs faster than the Bellman-Ford algorithm because it excludes nodes that may be of higher cost (longer distances). Although this behavior is greedy, the algorithm takes local optimal steps to produce a global optimal solution.";
 
         var TimeComplexity = {
             worst: 'O(|V|&#8226log(|V|) + |E|)',
