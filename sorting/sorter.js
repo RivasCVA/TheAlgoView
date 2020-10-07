@@ -591,11 +591,11 @@ maxHeapify(int[] arr, int len, int i)
 
     // finds the larger element between
     // the parent and its two children
-    if (l < n && arr[l] > arr[largest]) {
+    if (l < len && arr[l] > arr[largest]) {
         largest = l;
     }
 
-    if (r < n && arr[r] > arr[largest]) {
+    if (r < len && arr[r] > arr[largest]) {
         largest = r;
     }
 
@@ -608,7 +608,7 @@ maxHeapify(int[] arr, int len, int i)
 
         // recursively heapifies the subtree
         // below the current parent
-        maxHeapify(arr, n, largest);
+        maxHeapify(arr, len, largest);
     }
 }
 

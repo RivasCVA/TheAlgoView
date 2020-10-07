@@ -95,7 +95,9 @@ pathSpeedSlider.oninput = function() {
 
 // Handles Algo Drop Down Button
 function dropdownClick() {
-    document.getElementById('pathfinding-dropdown-content').classList.toggle('show');
+    var dropdownContent = document.getElementById('pathfinding-dropdown-content');
+    dropdownContent.classList.toggle('show');
+    dropdownContent.style.left = "10px";
 }
 
 // Handles Drop Down Item selection

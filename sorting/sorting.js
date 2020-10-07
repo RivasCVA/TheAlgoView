@@ -161,7 +161,9 @@ randomizeButton.onclick = function() {
 
 // Sets up the sorting algorithm dropdown
 function dropdownClick() {
-    document.getElementById('sort-dropdown-content').classList.toggle('show');
+    var dropdownContent = document.getElementById('sort-dropdown-content');
+    dropdownContent.classList.toggle('show');
+    dropdownContent.style.left = "25px";
 }
 
 // When a new Sort Type is selected
