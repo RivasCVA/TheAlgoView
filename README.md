@@ -1,5 +1,5 @@
 # The Algorithm Viewer
-A web application developed to learn about different algorithms visually. An exemplary implementation code and other important details is provided for each algorithm.
+A web application developed to help people learn important programming algorithms visually. Code examples, time and space complexites, and detailed explanations are provided for the supported algorithms.
 
 # Link to Page
 [TheAlgoView.com](http://thealgoview.com)
